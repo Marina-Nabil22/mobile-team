@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:untitled/componate/content.dart';
 
-List <Widget>l=[Content(text: 'Marina',score: 570,),Content(text: 'Yousef',score: 570,),Content(text: 'Abdelrahman',score: 570,)];
+List <Widget>l=[Content(text: 'Yara',score: 'Head',),Content(text:'Members',score: 'score',),Content(text:'ِAlaa',score: '570',),Content(text: 'Marina',score: '570',),Content(text: 'Yousef',score: '570',),Content(text: 'Abdelrahman',score: '570',)];
 List <String>Trans=['English','Arabic'];
 List<bool>li=[false];
  Color x=Colors.white;
@@ -67,11 +67,11 @@ class _HomeScreemState extends State<HomeScreem> {
                   onPressed: (index){
                     setState(() {
                       if(li[index]==false){
-                l=[Content(text:'مارينا',score: 570,),Content(text: 'يوسف',score: 570,),Content(text: 'عبد الرحمن',score: 570,)];
+                l=[Content(text: 'يارا',score: 'Head',),Content(text:'التيم',score: 'score',),Content(text:'الاء',score: '570',),Content(text:'مارينا',score: '570',),Content(text: 'يوسف',score: '570',),Content(text: 'عبد الرحمن',score: '570',)];
                 li[index]=true;
                       }
                       else {
-                        l=[Content(text: 'Marina',score: 570,),Content(text: 'Yousef',score: 570,),Content(text: 'Abdelrahman',score: 570,)];
+                        l=[Content(text: 'Yara',score: 'Head',),Content(text:'ِMembers',score: 'score',),Content(text:'ِAlaa',score: '570',),Content(text: 'Marina',score: '570',),Content(text: 'Yousef',score: '570',),Content(text: 'Abdelrahman',score: '570',)];
                         li[index]=false;
                       }
                     });
@@ -84,7 +84,9 @@ class _HomeScreemState extends State<HomeScreem> {
               child: Column(mainAxisAlignment: MainAxisAlignment.start,
                 children:  [
                  for(int i=0;i<l.length;i++)
+
                  l[i],
+
                 ],
               ),
             ),
