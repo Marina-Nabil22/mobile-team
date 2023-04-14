@@ -6,7 +6,7 @@ class Content extends StatefulWidget {
 
   Content({Key? key,required this.text,required this.score}) : super(key: key);
   String text;
-  int score;
+  String score;
 
   @override
   State<Content> createState() => _ContentState();
@@ -20,7 +20,7 @@ class _ContentState extends State<Content> {
       // padding: EdgeInsets.all(20),
       margin:const EdgeInsets.only(top: 25),
       height: 50,
-      width: 320,
+      width: 370,
       // color: Colors.white,
       child: Row(
         children: [
@@ -30,20 +30,21 @@ class _ContentState extends State<Content> {
           style: const TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,
-            fontSize: 27
+            fontSize: 20
           ),
           ),
           ),
           Expanded(
-            flex: 1,
+            flex: 3,
             child: Text('${widget.score}',
              style: const TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,
-            fontSize: 18
+            fontSize: 20
           ),
             )
             )
+
         ],
       ),
     );
