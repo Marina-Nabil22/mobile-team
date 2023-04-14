@@ -3,7 +3,6 @@
 import 'package:flutter/material.dart';
 import 'package:untitled/componate/content.dart';
 
-import '../componate/toggle_buttons.dart';
 List <Widget>l=[Content(text: 'Marina',score: 570,),Content(text: 'Yousef',score: 570,),Content(text: 'Abdelrahman',score: 570,)];
 List <String>Trans=['English','Arabic'];
 List<bool>li=[false];
